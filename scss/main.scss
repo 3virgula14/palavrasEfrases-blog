@@ -1,0 +1,76 @@
+//headers
+
+// fonts principais
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Slab:wght@300&display=swap');
+$titulos-blogueiros: 'Amatic SC', cursive;
+$text-elegantizados: 'Josefin Slab', serif;
+//'
+
+// colors for overall design -----------------------------
+$cinza-pastel: #dddfd4;
+$amarelo-iluminado: #fae596;
+$azul-piscina: #3fb0ac;
+$dark-azul-piscina: #173e43;
+
+//----------------------------------------------------------
+
+
+// colors from icaros picture for design -----------------------------
+/* SCSS RGB */
+$kombu-green: rgba(51, 76, 53, 1);
+$cafe-au-lait: rgba(164, 131, 93, 1);
+$antique-brass: rgba(198, 142, 110, 1);
+$uranian-blue: rgba(169, 210, 233, 1);
+$raisin-black: rgba(27, 35, 48, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #334C35ff, #A4835Dff, #C68E6Eff, #A9D2E9ff, #1B2330ff);
+$gradient-right: linear-gradient(90deg, #334C35ff, #A4835Dff, #C68E6Eff, #A9D2E9ff, #1B2330ff);
+$gradient-bottom: linear-gradient(180deg, #334C35ff, #A4835Dff, #C68E6Eff, #A9D2E9ff, #1B2330ff);
+$gradient-left: linear-gradient(270deg, #334C35ff, #A4835Dff, #C68E6Eff, #A9D2E9ff, #1B2330ff);
+$gradient-top-right: linear-gradient(45deg, #334C35ff, #A4835Dff, #C68E6Eff, #A9D2E9ff, #1B2330ff);
+$gradient-bottom-right: linear-gradient(135deg, #334C35ff, #A4835Dff, #C68E6Eff, #A9D2E9ff, #1B2330ff);
+$gradient-top-left: linear-gradient(225deg, #334C35ff, #A4835Dff, #C68E6Eff, #A9D2E9ff, #1B2330ff);
+$gradient-bottom-left: linear-gradient(315deg, #334C35ff, #A4835Dff, #C68E6Eff, #A9D2E9ff, #1B2330ff);
+$gradient-radial: radial-gradient(#334C35ff, #A4835Dff, #C68E6Eff, #A9D2E9ff, #1B2330ff);
+//----------------------------------------------------------
+
+
+// color derivation for design choices
+$titulos-principais: $azul-piscina;
+$corpo-de-text: lighten($raisin-black, 0.8);
+$titulos-secundarios: $dark-azul-piscina;
+$textos-de-acao: $cinza-pastel;
+////////////////////////
+
+// design basics
+.container{
+    max-width:  1000px;
+    margin-inline: auto;
+}
+// ---------------------------
+
+
+#home_writing{
+    & .title{
+        font-size: 3em;
+        font-family: $titulos-blogueiros;
+    }
+}
+
+#homecontent{
+    max-width: 1000px;
+    margin-top: 50px;
+    margin-inline: auto;
+
+    font-family: $text-elegantizados;
+
+    & h2{
+        color: $titulos-principais;
+    }
+
+
+}
+
+
+
